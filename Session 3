@@ -1,1 +1,25 @@
+Permissions concept in Linux---> 
+rwx rw-- r-- ----> first one would be user , second one would be group and third one would be other 
+User natotation -u , group notations- G, Other notations- O
+R-4 W-2 X-1
+In linux when we create the file and same time group will be create with same name
+example: if user created Basha and group will be also Basha
+
+User Management
+----------------
+1.User Creation
+when we create user we will use useradd command and to set password will use passwd user name 
+example: useradd Basha, passwd Basha
+to get know whether user created or not we will check in cat /etc/passwd
+to get know the groups getent group, when user is created automatically group is created with same name 
+vim /etc/ssh/sshd_config, in this default linux server password authentication is no , enable password authentication after enable the password authentication we need to restart sshd 
+command systemctl restart sshd , sshd -t command we will use to know if any error in sshd_config file
+to connect with user Basha, ssh Basha@ip
+
+2 Group creation
+groupadd Devops12
+every user has two groups one is primary and another one secondary, to add user to group command is usermod -g groupname username,
+example: usermod -g Devops12 Basha
+
+
 
