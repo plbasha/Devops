@@ -21,5 +21,11 @@ groupadd Devops12
 every user has two groups one is primary and another one secondary, to add user to group command is usermod -g groupname username,
 example: usermod -g Devops12 Basha
 
+will use this command for to create secondary group sudo usermod -aG Devops13 Basha
+
+
+
+
+
 
 
